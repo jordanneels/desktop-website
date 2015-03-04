@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* sets default values to zero, if not the browser will take control and add its default value */
+* {
+margin:0;
+padding:0;
+}
+p {
+line-height:1.25em;
+margin-bottom: 1em;
+color: #FFF;
+}
+body {
+background-image:url(background2.jpeg);	
+}
+.left {
+	width:50%;
+	float:left;
+}
+/* change the heading1 to be navy color */
+h1 {
+color: #FFF;
+}
+h2 {
+color: #FFF;
+}
+h3 {
+color: #FFF;
+}
+/* the main shell holding all div tags */
+#wrapper {
+width: 755px;
+position:relative;
+margin: auto;
+background-color:#333333;
+}
+/* top navigation div */
+#navcontainer ul {
+background-color:#000;
+float: left;
+width: 100%;
+padding-right: 32px; 
+}
+
+#navcontainer ul li { /* inline keeps layout horizontal */
+display: inline;
+}
+#navcontainer ul li a {
+padding: 0.2em 1em;
+text-decoration: none;
+float: left;
+border-right: 1px solid #fff;
+color: #FFF;
+}
+/* change the background-color to be #369 */
+#navcontainer ul li a:hover { /* controls the over or hover state of rollover */
+background-color: #369;
+}
+#navcontainer ul li #current { /* sets the link of the active page tab color to be different */
+background-color: #333333;
+}
+#main {
+float: left;
+width: 100%;
+padding-left:2em;
+}
+
+/* adding margin-left will move the UnorderedList inside wrapper */
+#main ol {
+margin-left:40px;
+}
+#main ul li a {
+margin-left:40px;
+color: #FFF;
+}
+
+/* float picture left, add margin to keep text away from image, add width */
+#pictureL {
+width: 300px;
+float:left;
+margin:10px;
+}
+/* float picture right, add margin to keep text away from image, add width */
+#pictureR {
+width: 50%;
+float:right;
+margin:10px;
+}
+#footer ul li a {
+color: #333333;
+background color: #000;
+bottom: 0px;
+width: 100%;
+padding-right: 32px; /* fits content to match navcontainer width */
+}
+#footer p {
+text-align:center;
+margin:0;
+}
+#footer a {
+color:#FFF;
+text-decoration:none;
+}
+#footer a:hover {
+color:#FFF;
+text-decoration:underline;
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* sets default values to zero, if not the browser will take control and add its default value */
+* {
+margin:0;
+padding:0;
+}
+/* adjust the paragraph’s line-height to be 1.25em; (this will add space between lines) */
+/* adjust the paragraph’s margin-bottom to be 1em; (this will add space between paragraphs) */
+p {
+line-height:1.25em;
+margin-bottom: 1em;
+}
+/* change the heading1 to be navy color */
+h1 {
+color: navy;
+}
+/* the main shell holding all div tags */
+#wrapper {
+width: 755px;
+position:relative;
+margin: auto;
+background-color:#0FF;
+}
+/* top navigation div */
+#navcontainer ul {
+background-color: #036;
+float: left;
+width: 100%;
+padding-right: 32px; /* bullets are included in the padding area */
+/* removing bullets requires padding to be added at the right */
+}
+#navcontainer ul li { /* inline keeps layout horizontal */
+display: inline;
+}
+#navcontainer ul li a {
+	padding: 0.2em 1em;
+text-decoration: none;
+float: left;
+border-right: 1px solid #fff;
+color: #fff;
+}
+/* change the background-color to be #369 */
+#navcontainer ul li a:hover { /* controls the over or hover state of rollover */
+background-color: #369;
+}
+#navcontainer ul li #current { /* sets the link of the active page tab color to be different */
+background-color: #369;
+}
+#main {
+float: left;
+width: 100%;
+background-color:#0ff;
+padding-left:2em;
+}
+/* adding margin-left will move the UnorderedList inside wrapper */
+#main ul {
+margin-left:40px;
+}
+/* float picture left, add margin to keep text away from image, add width */
+#pictureL {
+width: 300px;
+float:left;
+margin:10px;
+}
+/* float picture right, add margin to keep text away from image, add width */
+#pictureR {
+width: 50%;
+float:right;
+margin:10px;
+}
+/* set text color to white, background color to #036, position to absolute */
+/* bottom postion to 0px, and width to 100% */
+#footer {
+color:#FFF;
+background-color: #036;
+bottom: 0px;
+width: 100%;
+padding-right: 32px; /* fits content to match navcontainer width */
+}
+/* align the text to center, and margin 0 */
+#footer p {
+text-align:center;
+margin:0;
+}
+/* sets the anchors in the footer id to be white and no underline */
+#footer a {
+color:#FFF;
+text-decoration:none;
+}
+#footer a:hover {
+color:#369;
+text-decoration:underline;
+}
